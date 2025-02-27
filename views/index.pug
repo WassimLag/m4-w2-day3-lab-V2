@@ -1,0 +1,38 @@
+extends layout
+
+block content
+
+  main
+    h4 Register to subscribe
+    
+    section#intro-text
+      span Simple Kitchen
+      h3
+        | Simple &amp; Comforting 
+        br
+        |             Recipes All Year Round
+      p Pan-seared chicken, Grill shrimp, mac &amp; cheese&mdash;need we say more?
+      button.submit-buttton View Recipes
+    section#intro-image
+      if showForm
+        include form.pug
+      else
+        img(src='images/louisiana-barbecued-shrimp.webp' alt='Louisiana Barbecued Shrimp')
+
+        extends layout
+
+block content
+
+    if registrations.length
+        table.listing-table.table-dark.table-striped
+            tr
+                th Name
+                th Email
+                th Username
+            each registration in registrations
+                tr
+                    td= registration.name
+                    td= registration.email
+                    td= registration.username
+    else
+        p No registrations yet :(

@@ -1,0 +1,28 @@
+doctype html
+html
+  head
+    title= `${title}`
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/styles.css')
+
+    link(rel='preconnect' href='https://fonts.gstatic.com')
+    link(href='https://fonts.googleapis.com/css2?family=Sacramento&display=swap' rel='stylesheet')
+    script(src='script.js')
+
+  body
+    div.container.listing-reg
+      header
+        nav
+          ul
+            li
+              a(href='/') Home
+            li |
+            li
+              a(href='#') Blog
+            li.register
+              a(href='/register') Register  
+      
+      block content
+
+      footer
+      | &copy; Copyright 2021

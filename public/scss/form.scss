@@ -1,0 +1,41 @@
+/* css for registration form and errors*/
+/* Styles for listing table */
+body {
+	padding: 40px 10px;
+	background-color: #eee;
+}
+
+// .my-errors {
+// 	margin: 0 auto;
+// 	padding: 0;
+// 	list-style: none;
+// 	color: #333;
+// 	font-size: 1.2rem;
+// 	display: table;
+// 	li {
+// 		margin: 0 0 1rem;
+// 		&:before {
+// 			content: "! Error : ";
+// 			color: #f00;
+// 			font-weight: bold;
+// 		}
+// 	}
+// }
+
+/* Adjust the form within the image section */
+.form-container {
+    max-width: 400px; /* Adjust the width as needed */
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 8px; /* Add border-radius for rounded corners */
+}
+
+
+.form-control {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}

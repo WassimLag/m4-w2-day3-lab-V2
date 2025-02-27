@@ -1,0 +1,22 @@
+.form-registration {
+	max-width: 300px;
+	padding: 5px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	
+	input {
+		width: 100%;
+		margin: 0px 0 12px;
+	}
+	.btn {
+		flex: 1 0 100%;
+		margin-top: 12px;
+	}
+}
+
+.register {
+	float: right; // Push the "Register" link to the right side
+	margin-left: 1100px;
+	font-weight: bold;
+  }
